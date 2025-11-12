@@ -23,7 +23,7 @@ public class SchoolRepository {
 
     // READ : Haal alle Schools op
     public List<School> findAllSchools(EntityManager em) {
-        return em.createQuery("select s from School s").getResultList();
+        return em.createQuery("SELECT s FROM School s", School.class).getResultList();
     }
 
     // UPDATE : Werk School bij

@@ -23,7 +23,7 @@ public class TeacherRepository {
 
     // READ : Haal alle Teahers op
     public List<Teacher> findAllTeacher(EntityManager em) {
-        return em.createQuery("select t from Teacher t", Teacher.class).getResultList();
+        return em.createQuery("SELECT t FROM Teacher t", Teacher.class).getResultList();
     }
 
     // UPDATE : Werk Teacher bij
