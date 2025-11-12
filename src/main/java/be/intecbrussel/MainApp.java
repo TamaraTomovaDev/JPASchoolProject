@@ -57,7 +57,7 @@ public class MainApp {
         // Maak Students
         Student tamara = new Student();
         tamara.setFirstName("Tamara");
-        tamara.setLastName("Tomova");
+        tamara.setLastName("Tmva");
         tamara.setSchool(school);
         tamara.getTeachers().addAll(Arrays.asList(hilal, teodora, hanae));
 
@@ -114,7 +114,7 @@ public class MainApp {
 
         // UPDATE
         System.out.println("\n--- UPDATE ---");
-        tamara.setLastName("Tomova-Updated");
+        tamara.setLastName("Tomova");
         studentService.updateStudent(tamara);
         System.out.println("Student geüpdatet: " + studentService.readStudent(tamara.getId()).getLastName());
 

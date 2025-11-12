@@ -9,7 +9,6 @@ import java.util.List;
 
 public class StudentService {
     private StudentRepository studentRepo = new StudentRepository();
-
     // CREATE : Voeg een nieuwe student toe
     public void createStudent(Student student) {
         EntityManager em = JpaConfig.getEntityManager();

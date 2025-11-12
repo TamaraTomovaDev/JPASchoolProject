@@ -2,9 +2,7 @@ package be.intecbrussel.service;
 
 import be.intecbrussel.config.JpaConfig;
 import be.intecbrussel.model.School;
-import be.intecbrussel.model.Student;
 import be.intecbrussel.repository.SchoolRepository;
-import be.intecbrussel.repository.StudentRepository;
 import jakarta.persistence.EntityManager;
 
 import java.util.List;
